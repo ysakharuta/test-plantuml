@@ -2,7 +2,7 @@
 title Egg Game Service
 '!include stylesheet.iuml
 '!include https://s3retentionsample-s3bucket-7jmn0lnp3c5r.s3.us-west-2.amazonaws.com/stylesheet.iuml
-!include https://github.com/ysakharuta/test-plantuml/blob/main/stylesheet.iuml
+!include https://raw.githubusercontent.com/ysakharuta/test-plantuml/main/stylesheet.iuml
 skinparam component {
     BackgroundColor<<Java>> lightgreen
     BackgroundColor<<Ruby>> pink
