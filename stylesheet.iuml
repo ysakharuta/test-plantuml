@@ -1,4 +1,13 @@
 @startuml
+skinparam component {
+    BackgroundColor<<Java>> lightgreen
+    BackgroundColor<<Ruby>> pink
+    BackgroundColor<<External>> lightgrey
+    BackgroundColor<<Deprecate>> grey
+    BackgroundColor<<AWS>> orange
+    BackgroundColor<<Python>> lightblue
+    BackgroundColor<<Q>> purple
+}
 skinparam database {
     BackgroundColor<<New>> lightgreen
     BackgroundColor<<Deprecate>> grey

@@ -3,15 +3,6 @@ title Egg Game Service
 '!include stylesheet.iuml
 '!include https://s3retentionsample-s3bucket-7jmn0lnp3c5r.s3.us-west-2.amazonaws.com/stylesheet.iuml
 !include https://raw.githubusercontent.com/ysakharuta/test-plantuml/main/stylesheet.iuml
-skinparam component {
-    BackgroundColor<<Java>> lightgreen
-    BackgroundColor<<Ruby>> pink
-    BackgroundColor<<External>> lightgrey
-    BackgroundColor<<Deprecate>> grey
-    BackgroundColor<<AWS>> orange
-    BackgroundColor<<Python>> lightblue
-    BackgroundColor<<Q>> purple
-}
 
 actor User
 component "Egg Game Service" as EggGameService<<Java>>
