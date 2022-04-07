@@ -1,10 +1,26 @@
 @startuml
-actor client
-node app
-node car
-node tshirt
+title Egg Game Service
+'!include stylesheet.iuml
+!include https://s3retentionsample-s3bucket-7jmn0lnp3c5r.s3.us-west-2.amazonaws.com/stylesheet.iuml
+skinparam component {
+    BackgroundColor<<Java>> lightgreen
+    BackgroundColor<<Ruby>> pink
+    BackgroundColor<<External>> lightgrey
+    BackgroundColor<<Deprecate>> grey
+    BackgroundColor<<AWS>> orange
+    BackgroundColor<<Python>> lightblue
+    BackgroundColor<<Q>> purple
+}
 
-car -> app
-app -> client
-client -> tshirt
+actor User
+component "Egg Game Service" as EggGameService<<Java>>
+database EggGameServiceDb<<New>>
+component Wallet<<Java>>
+component EggContentService<<Python>>
+
+User -right-( EggGameService
+EggGameService -down-( EggGameServiceDb
+Wallet -[hidden]down-( EggContentService
+EggGameService -right-( Wallet :decrease Eggs\nstore Rewards
+EggGameService -right-( EggContentService : get RewardsSet
 @enduml
