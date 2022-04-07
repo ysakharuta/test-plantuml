@@ -1,0 +1,7 @@
+@startuml
+skinparam database {
+    BackgroundColor<<New>> lightgreen
+    BackgroundColor<<Deprecate>> grey
+    BackgroundColor<<Q>> purple
+}
+@enduml
